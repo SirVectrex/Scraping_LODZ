@@ -58,11 +58,11 @@ def check_link(link, target_name):
             with open(savefile, "wb") as f:
                 f.write(r.content)
                 # add info to log file
-                with open("downloads/log.txt", "a") as log:
+                with open("logs/log.txt", "a") as log:
                     log.write("Downloaded " + filename + " from " + link + " at " + str(time.asctime(time.localtime(time.time()))) + "\n")
         else:
             # add info to misses.txt
-            with open("downloads/misses.txt", "a") as misses:
+            with open("logs/misses.txt", "a") as misses:
                 misses.write("Not downloading " + filename + " from " + link + " at " + str(time.asctime(time.localtime(time.time()))) + "\n")
     except:
         pass
