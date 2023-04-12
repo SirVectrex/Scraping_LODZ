@@ -27,5 +27,10 @@ NOTE:
 - Use maximum thread with caution (100 max on i7 4900K).
 - Use Start and End to limit the number of searches. Maybe manually find the first and last element.
 
+## Logging and Output
 
+1. All files will be saved in the folder "downloads".
+2. Two log fileswill be saved in the folder "logs".
+- Misses.txt documents all documents that were found, but not of relevance
+- Hits.txt documents all documents that were found and of relevance
 
